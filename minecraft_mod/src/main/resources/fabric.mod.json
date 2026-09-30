@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "flymind-bridge",
+  "version": "${version}",
+  "name": "FlyMind Bridge",
+  "description": "High-throughput telemetry and control bridge for Drosophila connectome SNN agents in Minecraft.",
+  "authors": [
+    "FlyMind Research Project"
+  ],
+  "contact": {
+    "homepage": "https://github.com/flymind/flymind"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "ai.flymind.FlyMindMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.20.4",
+    "java": ">=17"
+  }
+}
