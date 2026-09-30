@@ -1,0 +1,14 @@
+{
+  "num_neurons": 45,
+  "num_edges": 43,
+  "density": 0.021717,
+  "mean_in_degree": 0.96,
+  "max_in_degree": 2,
+  "mean_out_degree": 0.96,
+  "max_out_degree": 2,
+  "strategy": "connectome_weighted",
+  "dataset_source": "FlyWire Drosophila melanogaster whole-brain connectome",
+  "dataset_version": "v783",
+  "cell_types_count": 28,
+  "neuropils_count": 12
+}

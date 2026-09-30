@@ -1,0 +1,56 @@
+{
+  "FlyMind": {
+    "noise_0.0": {
+      "success_rate": 0.0,
+      "mean_reward": -62.97
+    },
+    "noise_0.1": {
+      "success_rate": 0.0,
+      "mean_reward": -64.9
+    },
+    "noise_0.25": {
+      "success_rate": 0.0,
+      "mean_reward": -70.29
+    },
+    "noise_0.5": {
+      "success_rate": 0.0,
+      "mean_reward": -48.14
+    }
+  },
+  "Generic_SNN": {
+    "noise_0.0": {
+      "success_rate": 0.0,
+      "mean_reward": -62.97
+    },
+    "noise_0.1": {
+      "success_rate": 0.0,
+      "mean_reward": -64.9
+    },
+    "noise_0.25": {
+      "success_rate": 0.0,
+      "mean_reward": -70.29
+    },
+    "noise_0.5": {
+      "success_rate": 0.0,
+      "mean_reward": -48.14
+    }
+  },
+  "ANN": {
+    "noise_0.0": {
+      "success_rate": 0.0,
+      "mean_reward": -64.31
+    },
+    "noise_0.1": {
+      "success_rate": 0.0,
+      "mean_reward": -32.06
+    },
+    "noise_0.25": {
+      "success_rate": 0.0,
+      "mean_reward": -61.28
+    },
+    "noise_0.5": {
+      "success_rate": 0.0,
+      "mean_reward": -38.03
+    }
+  }
+}
