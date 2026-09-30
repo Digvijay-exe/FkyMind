@@ -1,0 +1,24 @@
+lif_parameters:
+  v_rest: -65.0      # Resting potential in mV
+  v_reset: -70.0     # Post-spike reset potential in mV
+  v_thresh: -50.0    # Action potential threshold in mV
+  tau_m: 20.0        # Membrane time constant in ms
+  t_ref: 2.0         # Absolute refractory period in ms
+  dt: 1.0            # Integration time-step in ms
+  time_steps: 16     # Number of simulation time steps per decision step
+
+network:
+  scale: "small"     # "small" (512), "medium" (2048), "large" (8192)
+  dale_principle: true # Enforce sign by predicted neurotransmitter (ACh=+, GABA=-, Glut=-)
+  initial_weight_scale: 0.8
+  sparse_format: "csr"
+
+sensory_mapping:
+  num_inputs: 14     # front/left/right raycasts, target dist/angle, vel, health, etc.
+  encoding: "rate"   # "rate" or "latency"
+  max_spike_rate_hz: 100.0
+
+action_mapping:
+  num_actions: 8     # NO_OP, FORWARD, BACKWARD, LEFT, RIGHT, JUMP, ATTACK, INTERACT
+  decoding: "spike_count" # "spike_count" or "membrane_potential"
+  temperature: 1.0

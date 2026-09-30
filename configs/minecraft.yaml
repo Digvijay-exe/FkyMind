@@ -1,0 +1,25 @@
+connection:
+  host: "127.0.0.1"
+  port: 8085
+  timeout_seconds: 5.0
+  reconnect_retries: 3
+
+runtime:
+  mode: "mock" # "fabric" for real Minecraft, "mock" for built-in simulator
+  ticks_per_action: 4
+  max_steps_per_episode: 300
+
+mission:
+  task: "target_navigation"
+  world_size: [32, 32]
+  start_pos: [4.0, 4.0]
+  target_pos: [28.0, 28.0]
+  target_reach_radius: 1.5
+  num_obstacles: 14
+  seed: 42
+
+sensors:
+  raycast_rays: 5
+  raycast_fov_degrees: 120.0
+  raycast_max_distance: 12.0
+  normalize_distances: true

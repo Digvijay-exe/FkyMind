@@ -1,0 +1,11 @@
+# Reward shaping parameters for goal-directed Minecraft navigation
+rewards:
+  target_reached: 100.0       # Reaching target objective
+  progress_scale: 1.0         # Proportional reward for reducing distance to target
+  useful_movement: 0.1        # Forward progress reward
+  step_penalty: -0.05         # Time efficiency penalty per step
+  collision_penalty: -2.0     # Obstacle or wall collision
+  severe_failure: -10.0       # Stuck or excessive deviation
+  episode_death: -100.0       # Fall/lava or fatal health drop
+
+target_reach_threshold: 1.5

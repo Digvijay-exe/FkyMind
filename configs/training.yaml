@@ -1,0 +1,21 @@
+algorithm: "PPO"
+
+hyperparameters:
+  total_episodes: 500
+  steps_per_batch: 1024
+  learning_rate: 0.0003
+  gamma: 0.99
+  gae_lambda: 0.95
+  clip_range: 0.2
+  vf_coef: 0.5
+  ent_coef: 0.01
+  max_grad_norm: 0.5
+  n_epochs: 4
+
+evaluation:
+  eval_frequency: 25
+  eval_episodes: 10
+  save_best: true
+
+baselines:
+  compare_models: ["random", "ann", "generic_snn", "flymind"]

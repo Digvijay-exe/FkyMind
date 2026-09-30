@@ -1,0 +1,14 @@
+system:
+  project_name: "FlyMind"
+  seed: 42
+  device: "cpu"  # "cpu" or "cuda"
+  log_level: "INFO"
+  output_dir: "results"
+  checkpoints_dir: "checkpoints"
+
+connectome:
+  data_source: "FlyWire Drosophila whole-brain connectome v783"
+  subgraph_type: "sensorimotor_cx_mb"
+  target_neuron_count: 512
+  min_synapse_threshold: 3
+  normalize_weights: true
