@@ -1,0 +1,6 @@
+{
+  "name": "FlyMind: Drosophila Connectome SNN for Minecraft",
+  "description": "Connectome-inspired spiking neural network agent derived from Drosophila FlyWire for autonomous Minecraft gameplay, with interactive brain activity, LIF simulation, and baseline benchmark comparisons.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

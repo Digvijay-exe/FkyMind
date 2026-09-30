@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flymind"
+version = "0.1.0"
+description = "A Connectome-Inspired Spiking Neural Agent for Autonomous Minecraft Gameplay"
+authors = [
+    { name = "FlyMind Research Team", email = "research@flymind.ai" }
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+ml = [
+    "numpy>=1.24.0",
+    "scipy>=1.10.0",
+    "torch>=2.0.0",
+    "gymnasium>=0.28.0",
+]
+connectomics = [
+    "pandas>=2.0.0",
+    "networkx>=3.0",
+    "fafbseg>=2.0.0",
+    "navis>=1.0.0",
+]
+viz = [
+    "streamlit>=1.24.0",
+    "matplotlib>=3.7.0",
+    "seaborn>=0.12.0",
+]
+test = [
+    "pytest>=7.0.0",
+]
